@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Kido Cloud</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/tailwind.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="flex justify-between container mx-auto">
+        <img class="logo" src="img/logo.svg" />
+        <!-- Desktop nav -->
+        <nav class="main-nav main-nav--closed mobile-hidden">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <div class="desktop-nav-item scrollTo" data-scroll-to="about-section">
+                About
+                <div class="underline-animation"></div>
+              </div>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <div class="desktop-nav-item scrollTo" data-scroll-to="product-section">
+                Product
+                <div class="underline-animation"></div>
+              </div>
+            </li>
+            <li class="site-list__item">
+              <div class="desktop-nav-item scrollTo" data-scroll-to="pricing-section">
+                Pricing
+                <div class="underline-animation"></div>
+              </div>
+            </li>
+          </ul>
+          <a href="https://dev.kido.cloud/" target="_blank" class="black-button"
+            >Try it</a
+          >
+          <a href="https://dev.kido.cloud/" target="_blank" class="white-button"
+            >Login</a
+          >
+          <div class="custom-select">
+            <div class="select-selected">
+              <span>EN</span>
+              <img src="img/arrow.svg" alt="Arrow" />
+            </div>
+            <div class="select-items">
+              <div><span>EN</span></div>
+              <div><span>GR</span></div>
+            </div>
+          </div>
+        </nav>
+
+        <!-- buerger Menu -->
+        <div id="burgerMenu" class="mobile-show">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3.97656 5.97461H19.9766" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M3.97656 11.9746H19.9766" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M3.97656 17.9746H19.9766" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+
+        </div>
+      </div>
+    </header>
+
+    <div id="mobileNav" class="mobile-show">
+      <div class="container mx-auto">
+        <div class="flex items-center justify-between">
+          <div>
+            <img class="logo" src="img/logo.svg" />
+          </div>
+          <div id="closeMobileMenu">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 4L20 20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M4 20L20 4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>            
+          </div>
+        </div>
+  
+        <ul class="mobile-nav mt-20">
+          <li>
+            <span class="mobile-nav-item scrollTo" data-scroll-to="about-section">
+              About
+            </span>
+          </li>
+          <hr>
+          <li>
+            <span class="mobile-nav-item scrollTo" data-scroll-to="product-section">
+              Product
+            </span>
+          </li>
+          <hr>
+          <li>
+            <span class="mobile-nav-item scrollTo" data-scroll-to="pricing-section">
+              Pricing
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Main -->
+    <main class="main">
+      <div class="container mx-auto">
+        <section>
+          <div class="hero animate__animated animate__fadeIn">
+            <div class="hero-text">
+              <h1>
+                Kindergarten,<br />
+                Simplified.
+              </h1>
+              <p>
+                Giving kindergartens and parents an active role in bettering the
+                children's kindergarten experience.
+              </p>
+              <a
+                href="https://dev.kido.cloud/"
+                target="_blank"
+                class="black-button inline-block mt-6 lg:mt-12"
+                >Try Kido for Free</a
+              >
+            </div>
+            <div class="image-block">
+              <img src="img/man.svg" />
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="reasons" id="about-section">
+            <div class="reasons-top">
+              <h2 class="animate__animated animate__fadeInUp">
+                Why choose Kido cloud?
+              </h2>
+              <p class="animate__animated animate__fadeInUp">
+                <span>
+                  Kido takes all of the essentials which schools and kindergartens
+                  need to keep things organized and to keep parents fully
+                  informed, and packs it into an affordable, simple and secure
+                  app. Nothing more, and nothing less.
+                </span>
+              </p>
+            </div>
+            <ul class="reasons-list flex-col lg:flex-row">
+              <li>
+                <div
+                  id="affordable"
+                  class="reason active animate__animated animate__fadeInUp animate__delay_custom_1"
+                >
+                  <div class="round-button"></div>
+                  <p>Affordable</p>
+                </div>
+                <!-- mobile  -->
+                <div class="reason-additional-text mobile-show" id="affordable-text">
+                  <span>
+                    Kido's yearly subscription is comparable to a 2-month
+                      subscription of most other school management platforms,
+                      while boasting all the features your organization might
+                      need, made to be simple and user friendly.
+                  </span>
+                </div>
+              </li>
+
+              <li>
+                <div
+                  id="easy"
+                  class="reason animate__animated animate__fadeInUp animate__delay_custom_2"
+                >
+                  <div class="round-button"></div>
+                  <p>Easy to use</p>
+                </div>
+                <!-- mobile -->
+                <div class="reason-additional-text mobile-show" id="easy-text">
+                  <span>
+                    Whether you're tech-savvy or not, Kido is built using the
+                    latest User Interface practices to make onboarding and daily
+                    use easy-peasy. Try it for free and see for yourself!
+                  </span>
+                </div>
+              </li>
+
+              <li>
+                <div
+                  id="simple"
+                  class="reason animate__animated animate__fadeInUp animate__delay_custom_3"
+                >
+                  <div class="round-button"></div>
+                  <p>Simple yet effective</p>
+                </div>
+                <!-- mobile -->
+                <div class="reason-additional-text mobile-show" id="simple-text">
+                  <span>
+                    We spoke to hundreds of parents, teachers and school
+                      employees to understand their needs perfectly, and they all
+                      boiled down to simplicity, safety and reliability. We passed
+                      their tests with flying colors before bringing Kido Cloud to
+                      life.
+                  </span>
+                </div>
+              </li>
+
+              <li>
+                <div
+                  id="adaptable"
+                  class="reason animate__animated animate__fadeInUp animate__delay_custom_4"
+                >
+                  <div class="round-button"></div>
+                  <p>Adaptable & versatile</p>
+                </div>
+                <!-- mobile -->
+                <div class="reason-additional-text mobile-show" id="adaptable-text">
+                  <span>
+                    Kido is created to meet the needs of every school or
+                      kindergarten. To achieve that, we've made your new favorite
+                      software to be both customizable AND easy to set up. Log in
+                      and give it a try!
+                  </span>
+                </div>
+              </li>
+
+              <li>
+                <div
+                  id="safe"
+                  class="reason animate__animated animate__fadeInUp animate__delay_custom_5"
+                >
+                  <div class="round-button"></div>
+                  <p>Safe & Secure</p>
+                </div>
+                <!-- mobile -->
+                <div class="reason-additional-text mobile-show" id="safe-text">
+                  <span>
+                    Safety is always first, for both kindergartens and for
+                      parents. That's why Kido uncompromisingly follows the
+                      highest digital security standards, ensuring all of your
+                      data is bulletproof, and stays untouchable.
+                  </span>
+                </div>
+              </li>
+            </ul>
+            <ul
+              class="reasons-texts mobile-hidden animate__animated animate__fadeInUp animate__delay-1s"
+            >
+              <li data-target="affordable" class="reason-box active">
+                <img src="img/reason.svg" alt="reason image" />
+                <div class="reason-text">
+                  <h3 class="animate__animated animate__fadeIn">Affordable</h3>
+                  <p class="animate__animated animate__fadeIn">
+                    Kido's yearly subscription is comparable to a 2-month
+                    subscription of most other school management platforms,
+                    while boasting all the features your organization might
+                    need, made to be simple and user friendly.
+                  </p>
+                </div>
+              </li>
+              <li data-target="easy" class="reason-box">
+                <img src="img/reason.svg" alt="reason image" />
+                <div class="reason-text">
+                  <h3 class="animate__animated animate__fadeIn">Easy to use</h3>
+                  <p class="animate__animated animate__fadeIn">
+                    Whether you're tech-savvy or not, Kido is built using the
+                    latest User Interface practices to make onboarding and daily
+                    use easy-peasy. Try it for free and see for yourself!
+                  </p>
+                </div>
+              </li>
+              <li data-target="simple" class="reason-box">
+                <img src="img/reason.svg" alt="reason image" />
+                <div class="reason-text">
+                  <h3 class="animate__animated animate__fadeIn">
+                    Simple yet effective
+                  </h3>
+                  <p class="animate__animated animate__fadeIn">
+                    We spoke to hundreds of parents, teachers and school
+                    employees to understand their needs perfectly, and they all
+                    boiled down to simplicity, safety and reliability. We passed
+                    their tests with flying colors before bringing Kido Cloud to
+                    life.
+                  </p>
+                </div>
+              </li>
+              <li data-target="adaptable" class="reason-box">
+                <img src="img/reason.svg" alt="reason image" />
+                <div class="reason-text">
+                  <h3 class="animate__animated animate__fadeIn">
+                    Adaptable and versatile
+                  </h3>
+                  <p class="animate__animated animate__fadeIn">
+                    Kido is created to meet the needs of every school or
+                    kindergarten. To achieve that, we've made your new favorite
+                    software to be both customizable AND easy to set up. Log in
+                    and give it a try!
+                  </p>
+                </div>
+              </li>
+              <li data-target="safe" class="reason-box">
+                <img src="img/reason.svg" alt="reason image" />
+                <div class="reason-text">
+                  <h3 class="animate__animated animate__fadeIn">
+                    Safe and secure
+                  </h3>
+                  <p class="animate__animated animate__fadeIn">
+                    Safety is always first, for both kindergartens and for
+                    parents. That's why Kido uncompromisingly follows the
+                    highest digital security standards, ensuring all of your
+                    data is bulletproof, and stays untouchable.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="text-section" data-aos="fade-up">
+          <h2 class="animate__animated animate__fadeInUp">
+            <span>Join in on your child's <br /></span>
+            <span>academic journey</span>
+          </h2>
+          <p>
+            A useful friendly platform that will bring parents <br class="mobile-hidden" />
+            closer to the kindergarten.
+          </p>
+          <a href="https://dev.kido.cloud/" target="_blank" class="black-button"
+            >Try it</a
+          >
+        </section>
+        <section class="users" id="product-section">
+          <h2 data-aos="fade-up">Kido cloud users</h2>
+          <div class="users-slider">
+            <button
+              class="round-button button-left outline-none focus:outline-none"
+            ></button>
+            <ul class="users-list">
+              <li
+                class="user-box"
+                id="teachers"
+                data-aos="fade-up"
+                data-aos-delay="400"
+              >
+                <div class="user">
+                  <img src="img/user-teacher.svg" />
+                </div>
+              </li>
+              <li
+                class="user-box active"
+                id="administrators"
+                data-aos="fade-up"
+              >
+                <div class="user">
+                  <img src="img/user-administrator.svg" />
+                </div>
+              </li>
+              <li
+                class="user-box"
+                id="staff"
+                data-aos="fade-up"
+                data-aos-delay="600"
+              >
+                <div class="user">
+                  <img src="img/user-staff.svg" />
+                </div>
+              </li>
+              <li
+                class="user-box"
+                id="parents"
+                data-aos="fade-up"
+                data-aos-delay="800"
+              >
+                <div class="user">
+                  <img src="img/user-parent.svg" />
+                </div>
+              </li>
+              <li
+                class="user-box"
+                id="support"
+                data-aos="fade-up"
+                data-aos-delay="1000"
+              >
+                <div class="user">
+                  <img src="img/user-support.svg" />
+                </div>
+              </li>
+            </ul>
+            <button
+              class="round-button button-right outline-none focus:outline-none"
+            ></button>
+          </div>
+          <div class="user-cards-slider">
+            <ul class="slider-track">
+              <li class="user-card next" data-target="teachers">
+                <div class="user-card-top">
+                  <img src="img/user-teacher.svg" alt="user-pic" />
+                  <h3>
+                    Teachers
+                    <div class="underline-animation"></div>
+                  </h3>
+                </div>
+                <p>
+                  Will have the ability to organize children into classes, share
+                  valuable info between themselves, the rest of the school's
+                  staff and the parents. They can easily send messages, share
+                  important class-wide announcements and more. In doing so, also
+                  help parents to have an active role in all of their children's
+                  victories.
+                </p>
+              </li>
+              <li data-target="administrators" class="user-card active">
+                <div class="user-card-top">
+                  <img src="img/user-administrator.svg" alt="user-pic" />
+                  <h3>
+                    Administrators
+                    <div class="underline-animation"></div>
+                  </h3>
+                </div>
+                <p>
+                  By creating a user friendly CRM, organize your system in a way
+                  that helps all the parties make an impact on the organization.
+                  Kido allows you to easily organize your classrooms, assign
+                  teachers, share messages, organize meals and to have an
+                  overview of the performance of the individual and the
+                  organization. Set your school apart with meticulously designed
+                  reports that will help your organization grow even further.
+                </p>
+              </li>
+              <li class="user-card" data-target="staff">
+                <div class="user-card-top">
+                  <img src="img/user-staff.svg" alt="user-pic" />
+                  <h3>
+                    Staff
+                    <div class="underline-animation"></div>
+                  </h3>
+                </div>
+                <p>
+                  The chef needs to know who's allergic to peanuts, or who
+                  doesn't eat fish? The school bus driver needs to see
+                  tomorrow's route? The administrators need to put a report
+                  together in a few clicks? We got you covered.
+                </p>
+              </li>
+              <li class="user-card" data-target="parents">
+                <div class="user-card-top">
+                  <img src="img/user-parent.svg" alt="user-pic" />
+                  <h3>
+                    Parents
+                    <div class="underline-animation"></div>
+                  </h3>
+                </div>
+                <p>
+                  Kido is built to keep parents fully informed about their
+                  children's progress and day-to-day activities; and to help
+                  them communicate with teachers and the staff by sharing
+                  information in real time.
+                </p>
+              </li>
+
+              <li class="user-card prev" data-target="support">
+                <div class="user-card-top">
+                  <img src="img/user-support.svg" alt="user-pic" />
+                  <h3>
+                    Support
+                    <div class="underline-animation"></div>
+                  </h3>
+                </div>
+                <p>
+                  This is us! We have a team ready to assist with the set up and
+                  to provide answers to all of the questions you may have before
+                  and after your school has been enrolled. Just like parents,
+                  we're there 24/7!
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="container" id="pricing-section">
+          <div id="pricing" class="py-8 lg:py-20 lg:px-4 xl:px-16">
+            <div class="pricing-container xl:px-20">
+              <div
+                class="flex flex-col lg:flex-row justify-between xl:justify-evenly items-end"
+              >
+                <div class="pricing-side">
+                  <h2 class="pricing-title mb-10" data-aos="fade-up">
+                    Pricing
+                  </h2>
+                  <div class="pricing-buttons" data-aos="fade-up">
+                    <button id="monthly-button" class="pricing-button active">
+                      Monthly
+                    </button>
+                    <button id="yearly-button" class="pricing-button">
+                      Yearly
+                    </button>
+                  </div>
+                  <div
+                    id="monthly-card"
+                    class="price-card active"
+                    data-aos="fade-up"
+                  >
+                    <h2 class="big-price">&euro;25 / month</h2>
+                    <h3 class="small-price">&euro;300 / year</h3>
+                    <p class="price-text">
+                      Though we strive to make Kido impossibly affordable
+                      anyway, purchasing a yearly license entitles you to an
+                      ever better deal!
+                    </p>
+                    <button class="white-button">Subscribe</button>
+                  </div>
+                  <div id="yearly-card" class="price-card" data-aos="fade-up">
+                    <h2 class="big-price">&euro;250 / year</h2>
+                    <h3 class="small-price">&euro;21 / month</h3>
+                    <p class="price-text">
+                      Though we strive to make Kido impossibly affordable
+                      anyway, purchasing a yearly license entitles you to an
+                      ever better deal!
+                    </p>
+                    <button class="white-button">Subscribe</button>
+                  </div>
+                </div>
+                <div class="below-pricing-section flex flex-col w-full lg:w-auto">
+                  <div class="logo mb-10" data-aos="fade-up">
+                    <img src="img/logo-orange-cloud.svg" alt="Kido Cloud" />
+                  </div>
+                  <ul class="pluses">
+                    <li class="plus" data-aos="fade-up">
+                      Collaborative workspace
+                    </li>
+                    <li class="plus" data-aos="fade-up">All-inclusive price</li>
+                    <li class="plus" data-aos="fade-up">Unlimited users</li>
+                    <li class="plus" data-aos="fade-up">Photo library</li>
+                    <li class="plus" data-aos="fade-up">
+                      Report and stats system
+                    </li>
+                    <li class="plus" data-aos="fade-up">Support system</li>
+                    <li class="plus" data-aos="fade-up">
+                      School year page history
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section class="steps">
+        <div class="bcg-grey">
+          <div class="container mx-auto">
+            <div class="steps-header">
+              <div class="steps-header-text" data-aos="fade-up">
+                <h2 class="steps-title">3 Easy Steps</h2>
+                <p class="steps-text">towards digital school</p>
+              </div>
+              <img class="steps-img" src="img/teachers.svg" alt="teachers" />
+            </div>
+          </div>
+        </div>
+        <div class="container mx-auto">
+          <div class="container">
+            <ul class="steps-list">
+              <li class="step" data-aos="fade-up">
+                <div class="step-top px-4 lg:px-20">
+                  <h4>1. Discover</h4>
+                  <button class="w-10 h-10 round-button"></button>
+                </div>
+                <div class="step-additional-text">
+                  If you are a school owner/administrator, with a genuine desire
+                  to better your organization, we suggest you opt for a neatly
+                  designed, on-demand demo. We will show you how the app works
+                  and what this means for your school and everyone interacting
+                  with it.
+                </div>
+              </li>
+              <li class="step" data-aos="fade-up">
+                <div class="step-top px-4 lg:px-20">
+                  <h4>2. Set up</h4>
+                  <button class="w-10 h-10 round-button"></button>
+                </div>
+                <div class="step-additional-text">
+                  Our team here is prepared to assist you upon setting up,
+                  customizing the app and continuing to offer support throughout
+                  your journey with Kido! We are here on a long run, eager to
+                  grow as your school grows and improves. Access to reports and
+                  relevant statistics will provide a much needed insight on
+                  where your opportunity to grow lies.
+                </div>
+              </li>
+              <li class="step" data-aos="fade-up">
+                <div class="step-top px-4 lg:px-20">
+                  <h4>3. You're live</h4>
+                  <button class="w-10 h-10 round-button"></button>
+                </div>
+                <div class="step-additional-text">
+                  Once the set up has been completed your organization is
+                  prepared to grow and flourish with Kido cloud! You will have
+                  ongoing support and assistance needed throughout your journey.
+                  We will appreciate your feedback and guidance as a user to
+                  help us better the Kido cloud experience for all existing and
+                  new users.
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="text-section">
+        <h2 data-aos="fade-up">
+          Would you like to see <br />
+          how it works?
+        </h2>
+        <p data-aos="fade-up">
+          We are happy to show you around the app that we so carefully designed.
+          <br />
+          Schedule your demo , a personal tour through the app.
+        </p>
+        <a
+          href="https://dev.kido.cloud/"
+          target="_blank"
+          class="black-button"
+          data-aos="fade-up"
+          >Demo</a
+        >
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container mx-auto">
+        <div class="flex flex-col lg:flex-row items-start">
+          <div class="footer-follow-box w-full lg:w-1/4">
+            <h3 class="footer-title">Follow</h3>
+            <ul class="footer-links">
+              <li class="footer-link">
+                <img src="img/facebook.svg" alt="face" />
+              </li>
+              <li class="footer-link">
+                <img src="img/instagram.svg" alt="inst" />
+              </li>
+              <li class="footer-link">
+                <img src="img/linkedin.svg" alt="link" />
+              </li>
+            </ul>
+          </div>
+          <div class="footer-explore-box w-full lg:w-1/4">
+            <h3 class="footer-title">Explore</h3>
+            <ul class="footer-nav">
+              <li>
+                <span class="footer-nav-item scrollTo" data-scroll-to="about-section">
+                  About
+                  <div class="underline-animation"></div>
+                </span>
+              </li>
+              <li>
+                <span class="footer-nav-item scrollTo" data-scroll-to="product-section">
+                  Product
+                  <div class="underline-animation"></div>
+                </span>
+              </li>
+              <li>
+                <span class="footer-nav-item scrollTo" data-scroll-to="pricing-section">
+                  Pricing
+                  <div class="underline-animation"></div>
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-addresses-box w-full lg:w-1/2">
+            <h3 class="footer-title">Addresses</h3>
+            <a href="https://maps.app.goo.gl/4kQohbSYYLFLtBB98" target="_blank">
+              20 Oxford street, Douglas, IM1 3JF, <br />
+              Isle of Man
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/js/scrollreveal.js"></script>
+    <script src="/js/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
