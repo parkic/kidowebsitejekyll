@@ -39,8 +39,8 @@ img {
 
 header {
   background-color: var(--orange);
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 ul {
@@ -87,13 +87,13 @@ h3 {
   justify-content: space-between;
 }
 .logo {
-  width: 118px;
-  height: 65px;
+  width: 110px;
+  height: 62px;
 }
 
 .main-nav {
   display: flex;
-  gap: 35px;
+  gap: 32px;
   align-items: first baseline;
 }
 .main-nav.mobile-hidden {
@@ -102,14 +102,14 @@ h3 {
 
 .site-list {
   display: flex;
-  gap: 35px;
+  gap: 32px;
 }
 
 .site-list a,
 .site-list  .desktop-nav-item,
 footer .footer-nav-item {
   color: white;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
   cursor: pointer;
 }
@@ -144,9 +144,9 @@ footer .footer-nav-item {
 }
 
 .black-button, .white-button {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
-  line-height: 28px;
+  line-height: 24px;
   padding: 12px 28px;
   border-radius: 60px;
   transition: all 0.3s ease;
@@ -176,7 +176,7 @@ footer .footer-nav-item {
   display: inline-block;
   color: white;
   min-width: 70px;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .select-selected {
@@ -245,15 +245,15 @@ footer .footer-nav-item {
 .hero h1 {
   margin-top: 0;
   margin-bottom: 24px;
-  font-size: 60px;
-  line-height: 70px;
+  font-size: 54px;
+  line-height: 64px;
   font-weight: bold;
   margin-bottom: 20px;
   font-family: "Nunito", sans-serif;
 }
 
 .hero p {
-  font-size: 24px;
+  font-size: 20px;
   margin-bottom: 40px;
 }
 
@@ -268,13 +268,13 @@ footer .footer-nav-item {
   justify-content: space-between;
   padding-left: 40px;
   padding-right: 40px;
-  padding-bottom: 80px;
   padding-top: 48px;
+  padding-bottom: 80px;
 }
 
 .reasons h2 {
   font-family: "Nunito", sans-serif;
-  font-size: 48px;
+  font-size: 44px;
   font-weight: bold;
   font-weight: 900; /*investigate why doenst apply*/
   margin: 0;
@@ -286,7 +286,7 @@ footer .footer-nav-item {
 }
 
 .reasons p {
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .reasons-list {
@@ -344,13 +344,13 @@ footer .footer-nav-item {
 }
 
 .reason-box p {
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .reason-box h3 {
-  font-size: 40px;
+  font-size: 36px;
   font-weight: bold;
-  /*margin-bottom: 24px;*/
+  margin-bottom: 16px;
   font-family: "Nunito", sans-serif;
   gap: 10px;
 }
@@ -369,33 +369,34 @@ footer .footer-nav-item {
 
 .text-section {
   padding: 64px;
+  padding-top: 64px;
+  padding-bottom: 64px;
   background-color: white;
   text-align: center;
 }
-.text-section .black-button {
-  display: inline-block;
-  margin-top: 32px;
-}
-
-
-.text-section {
+.bottom-text-section {
   padding-top: 96px;
   padding-bottom: 96px;
+}
+.text-section .black-button {
+  display: inline-block;
+  margin-top: 24px;
 }
 
 .text-section h2 {
   margin-top: 0;
   margin-bottom: 24px;
   font-family: "Nunito", sans-serif;
-  font-size: 60px;
-  line-height: 60px;
+  font-size: 44px;
+  line-height: 44px;
   font-weight: bold;
 }
 
 .text-section p {
+  margin-top: 32px;
   margin-bottom: 24px;
   font-family: "Nunito", sans-serif;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .step-top {
@@ -406,7 +407,7 @@ footer .footer-nav-item {
   background-color: var(--grey);
   border-radius: 10px;
   cursor: pointer;
-  min-height: 128px;
+  min-height: 112px;
   transition: all 0.3s ease;
 }
 
@@ -431,6 +432,7 @@ footer .footer-nav-item {
 .steps-list {
   margin: 0;
   padding-top: 80px;
+  padding-bottom: 60px;
 }
 .steps-list .round-button {
   width: 40px;
@@ -453,11 +455,12 @@ footer .footer-nav-item {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 32px;
 }
 
 .steps-title {
-  font-size: 64px;
-  line-height: 64px;
+  font-size: 54px;
+  line-height: 58px;
   font-weight: bold;
   font-family: "Nunito", sans-serif;
   margin-top: 0;
@@ -483,7 +486,7 @@ footer .footer-nav-item {
 
 .step h4 {
   color: var(--black);
-  font-size: 32px;
+  font-size: 28px;
   font-weight: bold;
   transition: all 0.3s ease;
 }
@@ -494,7 +497,7 @@ footer .footer-nav-item {
 .step .step-additional-text {
   max-height: 0;
   opacity: 0;
-  font-size: 24px;
+  font-size: 20px;
   margin-left: 80px;
   margin-right: 80px;
   transition: all 0.3s ease;
@@ -553,12 +556,11 @@ footer .footer-nav-item {
 }
 
 .users h2 {
-  font-size: 64px;
+  font-size: 44px;
   font-weight: bold;
   margin-bottom: 80px;
   margin-top: 0;
   font-family: "Nunito", sans-serif;
-  font-size: 60px;
   font-weight: bold;
 }
 .users .round-button {
@@ -574,12 +576,12 @@ footer .footer-nav-item {
   padding: 64px;
   border-radius: 15px;
   background-color: var(--grey);
-  font-size: 20px;
+  font-size: 18px;
   text-align: left;
   width: 1000px;
   color: rgba(255,255,255, 0.4);
   padding: 28px;
-  height: 400px;
+  height: 360px;
   overflow: hidden;
 }
 
@@ -619,7 +621,7 @@ footer .footer-nav-item {
   text-align: left;
   width: 1000px;
   color: black;
-  font-size: 24px;
+  font-size: 20px;
   flex: 0 0 50%;
   margin: 0 auto;
   position: absolute;
@@ -627,7 +629,7 @@ footer .footer-nav-item {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-height: 500px;
+  min-height: 440px;
 }
 .user-card.active .user-card-top img {
   border: 1px solid var(--orange);
@@ -636,7 +638,7 @@ footer .footer-nav-item {
   transition: background-color 0.3s ease;
 }
 .user-card.active .user-card-top {
-  margin-bottom: 48px;
+  margin-bottom: 24px;
   border: none;
 }
 
@@ -656,7 +658,7 @@ footer .footer-nav-item {
 
 .user-cards-slider {
   overflow: hidden;
-  padding-top: 60px;
+  padding-top: 50px;
   padding-bottom: 80px;
 }
 
@@ -692,7 +694,7 @@ footer .footer-nav-item {
 }
 
 .pricing-title {
-  font-size: 64px;
+  font-size: 54px;
   font-weight: bold;
   font-family: "Nunito", sans-serif;
   width: 600px; /*same as pricing card*/
@@ -726,7 +728,7 @@ footer .footer-nav-item {
 }
 
 .pricing-button {
-  font-size: 24px;
+  font-size: 20px;
   padding: 16px 32px;
   background-color: white;
   border-radius: 40px;
@@ -746,14 +748,14 @@ footer .footer-nav-item {
 }
 
 .big-price {
-  font-size: 80px;
+  font-size: 64px;
   font-weight: bold;
   font-family: "Nunito", sans-serif;
   margin: 0;
 }
 
 .small-price {
-  font-size: 40px;
+  font-size: 32px;
   font-weight: bolder;
   font-family: "Nunito", sans-serif;
 }
@@ -793,7 +795,7 @@ footer .footer-nav-item {
 }
 
 .plus {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 100;
 }
 
@@ -806,8 +808,8 @@ footer .footer-nav-item {
 footer {
   background-color: var(--black);
   color: white;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 48px;
+  padding-bottom: 64px;
   font-size: 24px;
 }
 .footer p {
@@ -823,7 +825,7 @@ footer {
 }
 
 .footer-title {
-  font-size: 48px;
+  font-size: 36px;
   font-weight: bold;
   margin-top: 0;
   margin-bottom: 15px;
@@ -1050,6 +1052,9 @@ footer {
     width: 72px;
     height: 72px;
   }
+  .user-card-top {
+    padding-bottom: 4px;
+  }
   .user-card h3 {
     font-size: 24px;
   }
@@ -1099,6 +1104,9 @@ footer {
   }
   .steps-header {
     padding-right: 0;
+  }
+  .steps-header-text {
+    margin-top: 0px;
   }
   .steps-title {
     font-size: 40px;
