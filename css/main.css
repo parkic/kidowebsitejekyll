@@ -1216,6 +1216,13 @@ body#contact #mobileNav {
   .footer-link img {
     width: 28px;
   }
+
+  #contact main {
+    min-height: calc(100vh - 200px);
+  }
+  #contact-content {
+    margin-top: -160px;
+  }
 }
 
 @media (min-width: 500px) and (max-width: 1024px) {
