@@ -94,7 +94,7 @@ h3 {
 .main-nav {
   display: flex;
   gap: 32px;
-  align-items: center;
+  align-items: first baseline;
 }
 .main-nav.mobile-hidden {
   display: flex;
@@ -113,15 +113,7 @@ footer .footer-nav-item {
   font-weight: 600;
   cursor: pointer;
 }
-footer .footer-nav-item {
-  font-size: 400;
-}
-.site-list  .desktop-nav-item {
-  padding-bottom: 2px;
-}
-.site-list  .desktop-nav-item:hover {
-  padding-bottom: 0px;
-}
+
 .black-button {
   color: white;
   background-color: var(--black);
@@ -153,7 +145,7 @@ footer .footer-nav-item {
 
 .black-button, .white-button {
   font-size: 20px;
-  font-weight: 600;
+  font-weight: bold;
   line-height: 24px;
   padding: 12px 28px;
   border-radius: 60px;
@@ -645,9 +637,6 @@ footer .footer-nav-item {
   animation: fadeIn ease-out forwards 0.5s;
   transition: background-color 0.3s ease;
 }
-.user-card.active .user-card-top img {
-  border: 1px solid white
-}
 .user-card.active .user-card-top {
   margin-bottom: 24px;
   border: none;
@@ -836,7 +825,7 @@ footer {
 }
 
 .footer-title {
-  font-size: 28px;
+  font-size: 36px;
   font-weight: bold;
   margin-top: 0;
   margin-bottom: 15px;
@@ -886,47 +875,6 @@ footer {
   animation-delay: 1.6s;
   -webkit-animation-delay: calc(var(--animate-delay)*1.6);
   animation-delay: calc(var(--animate-delay)*1.6)
-}
-
-
-body#contact {
-  min-height: 100vh;
-}
-#contact main {
-  min-height: calc(100vh - 80px);
-  background-color: var(--orange);
-}
-body#contact header,
-body#contact #mobileNav {
- border-bottom: 1px solid rgba(255,255,255, 0.4);
-}
-
-#contact h1 {
-  font-family: 'Nunito';
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 120%;
-  text-align: center;
-  color: white;
-}
-#contact h3,
-#contact h3 a {
-  font-family: 'Nunito';
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 120%;
-  text-align: center;
-  color: white;
-}
-#contact h3 a {
-  display: inline-block;
-}
-#contact h3 a:hover .underline-animation {
-  height: 2px;
-  animation: loadUnderline ease-out forwards 0.5s;
-}
-#contact footer h3 {
-  text-align: left;
 }
 
 

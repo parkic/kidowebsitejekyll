@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Kido Cloud</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/tailwind.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body id="contact">
+    <header class="page-header">
+      <div class="flex justify-between container mx-auto">
+        <a href="/index.html">
+          <img class="logo" src="img/logo.svg" />
+        </a>
+        <!-- Desktop nav -->
+        <nav class="main-nav main-nav--closed mobile-hidden">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <div class="desktop-nav-item scrollTo" data-scroll-to="about-section">
+                About
+                <div class="underline-animation"></div>
+              </div>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <div class="desktop-nav-item scrollTo" data-scroll-to="product-section">
+                Product
+                <div class="underline-animation"></div>
+              </div>
+            </li>
+            <li class="site-list__item">
+              <div class="desktop-nav-item scrollTo" data-scroll-to="pricing-section">
+                Pricing
+                <div class="underline-animation"></div>
+              </div>
+            </li>
+          </ul>
+          <a href="https://dev.kido.cloud/" target="_blank" class="black-button"
+            >Try it</a
+          >
+          <a href="https://dev.kido.cloud/" target="_blank" class="white-button"
+            >Login</a
+          >
+          <div class="custom-select">
+            <div class="select-selected">
+              <span>EN</span>
+              <img src="img/arrow.svg" alt="Arrow" />
+            </div>
+            <div class="select-items">
+              <div><span>EN</span></div>
+              <div><span>GR</span></div>
+            </div>
+          </div>
+        </nav>
+
+        <!-- buerger Menu -->
+        <div id="burgerMenu" class="mobile-show">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3.97656 5.97461H19.9766" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M3.97656 11.9746H19.9766" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M3.97656 17.9746H19.9766" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+
+        </div>
+      </div>
+    </header>
+
+    <div id="mobileNav" class="mobile-show">
+      <div class="container mx-auto">
+        <div class="flex items-center justify-between">
+          <div>
+            <a href="/index.html">
+              <img class="logo" src="img/logo.svg" />
+            </a>
+          </div>
+          <div id="closeMobileMenu">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 4L20 20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M4 20L20 4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>            
+          </div>
+        </div>
+  
+        <ul class="mobile-nav mt-20">
+          <li>
+            <span class="mobile-nav-item scrollTo" data-scroll-to="about-section">
+              About
+            </span>
+          </li>
+          <hr>
+          <li>
+            <span class="mobile-nav-item scrollTo" data-scroll-to="product-section">
+              Product
+            </span>
+          </li>
+          <hr>
+          <li>
+            <span class="mobile-nav-item scrollTo" data-scroll-to="pricing-section">
+              Pricing
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <main class="flex items-center justify-center">
+      <div class="flex items-center justify-center">
+        <div>
+          <h1 class="mb-8">Let's connect!</h1>
+          <h3>Contact us for more information 
+            <a href="mailto:info@kido.cloud">
+              info@kido.cloud
+              <div class="underline-animation"></div>
+            </a>
+          </h3>
+        </div>
+      </div>  
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container mx-auto">
+        <div class="flex flex-col lg:flex-row items-start">
+          <div class="footer-follow-box w-full lg:w-1/4">
+            <h3 class="footer-title">Follow</h3>
+            <ul class="footer-links">
+              <li class="footer-link">
+                <img src="img/facebook.svg" alt="face" />
+              </li>
+              <li class="footer-link">
+                <img src="img/instagram.svg" alt="inst" />
+              </li>
+              <li class="footer-link">
+                <img src="img/linkedin.svg" alt="link" />
+              </li>
+            </ul>
+          </div>
+          <div class="footer-explore-box w-full lg:w-1/4 lg:ml-12">
+            <h3 class="footer-title">Explore</h3>
+            <ul class="footer-nav">
+              <li>
+                <span class="footer-nav-item scrollTo" data-scroll-to="about-section">
+                  About
+                  <div class="underline-animation"></div>
+                </span>
+              </li>
+              <li>
+                <span class="footer-nav-item scrollTo" data-scroll-to="product-section">
+                  Product
+                  <div class="underline-animation"></div>
+                </span>
+              </li>
+              <li>
+                <span class="footer-nav-item scrollTo" data-scroll-to="pricing-section">
+                  Pricing
+                  <div class="underline-animation"></div>
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-addresses-box w-full lg:w-1/2 lg:ml-24">
+            <h3 class="footer-title">Address</h3>
+            <a href="https://maps.app.goo.gl/4kQohbSYYLFLtBB98" target="_blank">
+              20 Oxford street, Douglas, IM1 3JF, <br />
+              Isle of Man
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/js/scrollreveal.js"></script>
+    <script src="/js/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
