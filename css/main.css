@@ -114,7 +114,7 @@ footer .footer-nav-item {
   cursor: pointer;
 }
 footer .footer-nav-item {
-  font-size: 400;
+  font-weight: 400;
 }
 .site-list  .desktop-nav-item {
   padding-bottom: 2px;
@@ -929,6 +929,10 @@ body#contact #mobileNav {
   text-align: left;
 }
 
+.calendly-inline-widget {
+  min-width: 1200px;
+}
+
 
 @media (max-width: 1024px) {
   .mobile-show {
@@ -1222,6 +1226,10 @@ body#contact #mobileNav {
   }
   #contact-content {
     margin-top: -160px;
+  }
+  .calendly-inline-widget {
+    min-width: auto;
+    width: 100%;
   }
 }
 
