@@ -373,6 +373,7 @@ footer .footer-nav-item {
 .reason-box img {
   width: 300px;
   height: fit-content;
+  max-height: 190px;
 }
 
 .reason-text {
@@ -1055,6 +1056,20 @@ body#contact #mobileNav {
   .reason {
     flex-direction: row-reverse;
     border: 8px;
+  }
+  .reason .round-button {
+    width: 24px;
+    height: 24px;
+    transform: rotate(-90deg);
+    background-color: black;
+    transition: all 0.3s ease;
+  }
+  .reason.active .round-button {
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/arrow.svg");
+    background-color: black;
+    transform: rotate(0deg);
   }
   .reasons-list .reason-additional-text {
     max-height: 0;
