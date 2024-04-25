@@ -324,10 +324,17 @@ footer .footer-nav-item {
   box-shadow: 0px 2px 6px 3px #00000026;
 }
 .reason .round-button {
-  transition: all 0.3s ease;
+  width: 0;
+  height: 0;
   transform: rotate(-90deg);
+  background-color: white;
+  transition: all 0.3s ease;
 }
 .reason.active .round-button {
+  width: 18px;
+  height: 18px;
+  background-image: none;
+  background-color: white;
   transform: rotate(0deg);
 }
 
@@ -671,6 +678,8 @@ footer .footer-nav-item {
   overflow: hidden;
   padding-top: 50px;
   padding-bottom: 80px;
+  max-width: 1200px;
+  margin: 0 auto
 }
 
 .slider-track {
@@ -894,7 +903,7 @@ body#contact {
 }
 #contact main {
   min-height: calc(100vh - 80px);
-  background-color: var(--orange);
+  background-color: var(--background-color);
 }
 body#contact header,
 body#contact #mobileNav {
