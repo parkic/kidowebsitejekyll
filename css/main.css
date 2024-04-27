@@ -944,6 +944,56 @@ body#contact #mobileNav {
 }
 
 
+#terms-and-conditions h1,
+#privacy-policy h1{
+  font-family: 'Nunito';
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 120%;
+  text-align: center;
+  color: var(--black);
+}
+#privacy-policy div, 
+#terms-and-conditions div, 
+#privacy-policy p,
+#terms-and-conditions p {
+  font-size: 18px;
+}
+
+#privacy-policy p,
+#terms-and-conditions p {
+  margin-bottom: 12px;
+}
+#privacy-policy h2,
+#terms-and-conditions h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+#privacy-policy h3,
+#terms-and-conditions h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#privacy-policy ol,
+#terms-and-conditions ol {
+  margin-bottom: 1em;
+}
+#privacy-policy main ul,
+#terms-and-conditions main ul {
+  list-style: circle;
+}
+#privacy-policy main ol li,
+#privacy-policy main ul li,
+#terms-and-conditions main ol li,
+#terms-and-conditions main ul li {
+  margin-bottom: 0.25em;
+}
+
+
 @media (max-width: 1024px) {
   .mobile-show {
     display: block;
@@ -1240,6 +1290,9 @@ body#contact #mobileNav {
   footer .footer-nav-item,
   .footer a {
     font-size: 18px;
+  }
+  .footer a.text-sm {
+    font-size: 14px;
   }
   .footer-link img {
     width: 28px;
