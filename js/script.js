@@ -23,6 +23,10 @@ addEventListener('load', () => {
   navItems.forEach((navItem) => {
     navItem.addEventListener('click', (e) => {
       e.preventDefault()
+      if(window.location.pathname !== '/' && window.location.pathname !== '/index.html') {
+        window.location.href = `/index.html#${navItem.dataset.scrollTo}`
+      }
+      
       const target = document.getElementById(navItem.dataset.scrollTo)
 
       if (innerWidth < 768) {
@@ -116,50 +120,56 @@ addEventListener('load', () => {
     })
   }
 
-  document.querySelector(".button-left").addEventListener("click", () => {
-    const usercards = document.querySelectorAll(".user-card")
-    let clickedIndex
+  const buttonLeft = document.querySelector(".button-left")
+  if(buttonLeft) {
+    buttonLeft.addEventListener("click", () => {
+      const usercards = document.querySelectorAll(".user-card")
+      let clickedIndex
 
-    usercards.forEach((usercard, index) => {
-      if (usercard.classList.contains("active")) {
-        usercard.classList.remove("active")
-        clickedIndex = index
-      } else {
-        usercard.classList.remove("prev", "next")
-      }
+      usercards.forEach((usercard, index) => {
+        if (usercard.classList.contains("active")) {
+          usercard.classList.remove("active")
+          clickedIndex = index
+        } else {
+          usercard.classList.remove("prev", "next")
+        }
+      })
+
+      const prevIndex = (clickedIndex - 1 + usercards.length) % usercards.length
+      usercards[prevIndex].classList.add("active")
+      usercards[
+        (prevIndex - 1 + usercards.length) % usercards.length
+      ].classList.add("prev")
+      usercards[(prevIndex + 1) % usercards.length].classList.add("next")
+      setActiveUser(usercards, prevIndex)
     })
+  }
 
-    const prevIndex = (clickedIndex - 1 + usercards.length) % usercards.length
-    usercards[prevIndex].classList.add("active")
-    usercards[
-      (prevIndex - 1 + usercards.length) % usercards.length
-    ].classList.add("prev")
-    usercards[(prevIndex + 1) % usercards.length].classList.add("next")
-    setActiveUser(usercards, prevIndex)
-  })
+  const buttonRight = document.querySelector(".button-right")
+  if(buttonRight) {
+    buttonRight.addEventListener("click", () => {
+      const usercards = document.querySelectorAll(".user-card")
+      let clickedIndex
 
-  document.querySelector(".button-right").addEventListener("click", () => {
-    const usercards = document.querySelectorAll(".user-card")
-    let clickedIndex
+      usercards.forEach((usercard, index) => {
+        if (usercard.classList.contains("active")) {
+          usercard.classList.remove("active")
+          clickedIndex = index
+        } else {
+          usercard.classList.remove("prev", "next")
+        }
+      })
 
-    usercards.forEach((usercard, index) => {
-      if (usercard.classList.contains("active")) {
-        usercard.classList.remove("active")
-        clickedIndex = index
-      } else {
-        usercard.classList.remove("prev", "next")
-      }
+      const nextIndex = (clickedIndex + 1 + usercards.length) % usercards.length
+      usercards[nextIndex].classList.add("active")
+      usercards[
+        (nextIndex + 1 + usercards.length) % usercards.length
+      ].classList.add("prev")
+      usercards[(nextIndex + 2) % usercards.length].classList.add("next")
+
+      setActiveUser(usercards, nextIndex)
     })
-
-    const nextIndex = (clickedIndex + 1 + usercards.length) % usercards.length
-    usercards[nextIndex].classList.add("active")
-    usercards[
-      (nextIndex + 1 + usercards.length) % usercards.length
-    ].classList.add("prev")
-    usercards[(nextIndex + 2) % usercards.length].classList.add("next")
-
-    setActiveUser(usercards, nextIndex)
-  })
+  }
 
   /* for yearly/monthly button */
 
@@ -168,19 +178,24 @@ addEventListener('load', () => {
   const monthlyCard = document.getElementById("monthly-card")
   const yearlyCard = document.getElementById("yearly-card")
 
-  monthlyButton.addEventListener("click", function () {
-    monthlyCard.classList.add("active")
-    yearlyCard.classList.remove("active")
-    monthlyButton.classList.add("active")
-    yearlyButton.classList.remove("active")
-  })
+  if(monthlyButton){
+    monthlyButton.addEventListener("click", function () {
+      monthlyCard.classList.add("active")
+      yearlyCard.classList.remove("active")
+      monthlyButton.classList.add("active")
+      yearlyButton.classList.remove("active")
+    })
+  }
 
-  yearlyButton.addEventListener("click", function () {
-    monthlyCard.classList.remove("active")
-    yearlyCard.classList.add("active")
-    monthlyButton.classList.remove("active")
-    yearlyButton.classList.add("active")
-  })
+  if(yearlyButton){
+    yearlyButton.addEventListener("click", function () {
+      monthlyCard.classList.remove("active")
+      yearlyCard.classList.add("active")
+      monthlyButton.classList.remove("active")
+      yearlyButton.classList.add("active")
+    })
+  }
+
 
   /* for accordion */
 
