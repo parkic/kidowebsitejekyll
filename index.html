@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <script src="https://cdn.paddle.com/paddle/v2/paddle.js"></script>
   </head>
   <body>
     <header class="page-header">
@@ -520,7 +521,12 @@
                       anyway, purchasing a yearly license entitles you to an
                       ever better deal!
                     </p>
-                    <button class="white-button">Subscribe</button>
+                    <button 
+                      class="white-button" 
+                      onclick="openCheckout('monthly')"
+                    >
+                      Subscribe
+                    </button>
                   </div>
                   <div id="yearly-card" class="price-card" data-aos="fade-up">
                     <h2 class="big-price">&euro;300 / year</h2>
@@ -530,7 +536,12 @@
                       anyway, purchasing a yearly license entitles you to an
                       ever better deal!
                     </p>
-                    <button class="white-button">Subscribe</button>
+                    <button 
+                      class="white-button"
+                      onclick="openCheckout('yearly')"
+                    >
+                      Subscribe
+                    </button>
                   </div>
                 </div>
                 <div class="below-pricing-section flex flex-col w-full lg:w-auto">
@@ -697,6 +708,7 @@
 
     <script src="/js/scrollreveal.js"></script>
     <script src="/js/aos.js"></script>
+    <script src="/js/paddle.js"></script>
     <script>
       AOS.init();
     </script>
