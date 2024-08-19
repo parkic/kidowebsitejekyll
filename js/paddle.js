@@ -16,7 +16,6 @@ const subscriptionPlans = {
 }
 
 function openCheckout(item){
-  console.log(subscriptionPlans[item])
   Paddle.Checkout.open({
     items: [subscriptionPlans[item]]
   });
