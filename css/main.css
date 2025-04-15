@@ -80,6 +80,10 @@ h3 {
 .bcg-grey {
   background-color: var(--background-color);
 }
+
+.text-orange {
+  color: var(--orange);
+}
 /*  header */
 
 .page-header {

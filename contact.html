@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
   </head>
   <body id="contact">
     <header class="page-header">
@@ -47,13 +48,28 @@
                 <div class="underline-animation"></div>
               </div>
             </li>
+            <li class="site-list__item">
+              <a href="contact.html" class="desktop-nav-item">
+                Demo
+                <div class="underline-animation"></div>
+              </a>
+            </li>
           </ul>
-          <a href="https://dev.kido.cloud/" target="_blank" class="black-button"
-            >Try it</a
-          >
-          <a href="https://dev.kido.cloud/" target="_blank" class="white-button"
-            >Login</a
-          >
+          <a href="https://app.kido.cloud/" target="_blank" class="white-button">
+            Login
+          </a>
+          <ul class="flex gap-x-4">
+            <li class="footer-link mt-1">
+              <a href="https://play.google.com/store/apps/details?id=com.kido.cloud.app" target="_blank">
+                <img src="img/google-play.svg" alt="google play" />
+              </a>
+            </li>
+            <li class="footer-link">
+              <a href="https://apps.apple.com/rs/app/kido-cloud/id6503647855" target="_blank">
+                <img src="img/app-store.svg" alt="App store" />
+              </a>
+            </li>
+          </ul>
           <div class="custom-select">
             <div class="select-selected">
               <span>EN</span>
@@ -112,6 +128,28 @@
               Pricing
             </span>
           </li>
+          <hr>
+          <li class="mobile-nav-item">
+            <a href="contact.html" class="desktop-nav-item">
+              Demo
+              <div class="underline-animation"></div>
+            </a>
+          </li>
+          <hr>
+          <li>
+            <ul class="flex items-center justify-center mt-6 gap-x-8">
+              <li class="footer-link">
+                <a href="https://play.google.com/store/apps/details?id=com.kido.cloud.app" target="_blank">
+                  <img src="img/google-play.svg" alt="google play" />
+                </a>
+              </li>
+              <li class="footer-link">
+                <a href="https://apps.apple.com/rs/app/kido-cloud/id6503647855" target="_blank">
+                  <img src="img/app-store.svg" alt="App store" />
+                </a>
+              </li>
+            </ul>
+          </li>
         </ul>
       </div>
     </div>
@@ -133,13 +171,29 @@
             <h3 class="footer-title">Follow</h3>
             <ul class="footer-links">
               <li class="footer-link -ml-2">
-                <img src="img/facebook.svg" alt="face" />
+                <a href="https://www.facebook.com/profile.php?id=61566247787746">
+                  <img src="img/facebook.svg" alt="facebook" />
+                </a>
               </li>
               <li class="footer-link">
-                <img src="img/instagram.svg" alt="inst" />
+                <a href="https://www.instagram.com/kidocloud/">
+                  <img src="img/instagram.svg" alt="instagram" />
+                </a>
               </li>
               <li class="footer-link">
-                <img src="img/linkedin.svg" alt="link" />
+                <a href="https://www.linkedin.com/company/kido-cloud/">
+                  <img src="img/linkedin.svg" alt="linkedin" />
+                </a>
+              </li>
+              <li class="footer-link mt-1">
+                <a href="https://play.google.com/store/apps/details?id=com.kido.cloud.app" target="_blank">
+                  <img src="img/google-play.svg" alt="google play" />
+                </a>
+              </li>
+              <li class="footer-link mt-1">
+                <a href="https://apps.apple.com/rs/app/kido-cloud/id6503647855" target="_blank">
+                  <img src="img/app-store.svg" alt="App store" />
+                </a>
               </li>
             </ul>
           </div>
@@ -167,11 +221,17 @@
             </ul>
           </div>
           <div class="footer-addresses-box w-full lg:w-1/2 lg:ml-24">
-            <h3 class="footer-title">Address</h3>
-            <a href="https://maps.app.goo.gl/4kQohbSYYLFLtBB98" target="_blank">
-              20 Oxford street, Douglas, IM1 3JF, <br />
-              Isle of Man
-            </a>
+            <h3 class="footer-title">Contact</h3>
+            <div class="mb-4">
+              <a href="mailto:info@kido.cloud">info@kido.cloud</a>
+            </div>
+            <div>
+              <a href="https://maps.app.goo.gl/4kQohbSYYLFLtBB98" target="_blank">
+                20 Oxford street, <br> 
+                Douglas, IM1 3JF, <br />
+                Isle of Man
+              </a>
+            </div>
           </div>
         </div>
         <div class="flex items-center justify-end gap-x-4 pt-8">
@@ -187,5 +247,28 @@
       AOS.init();
     </script>
     <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
+    <script>
+      window.addEventListener("load", function () {
+        window.cookieconsent.initialise({
+          palette: {
+            popup: {
+              background: "#000"
+            },
+            button: {
+              background: "#ffa14d"
+            }
+          },
+          position: "bottom",
+          theme: "classic",
+          content: {
+            message: "Koristimo kolačiće za poboljšanje vašeg iskustva.",
+            dismiss: "Prihvati",
+            link: "Saznaj više",
+            href: "/privacy-policy.html" // tvoja stranica o privatnosti
+          }
+        });
+      });
+    </script>
   </body>
 </html>
