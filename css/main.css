@@ -119,6 +119,13 @@ footer .footer-nav-item {
 }
 footer .footer-nav-item {
   font-weight: 400;
+  transition: all 0.2s ease-in-out;
+}
+footer .footer-nav-item:hover {
+  color: var(--orange);
+}
+.footer .footer-addresses-box a {
+  font-size: 20px;
 }
 .site-list  .desktop-nav-item {
   padding-bottom: 2px;

@@ -248,27 +248,6 @@
     </script>
     <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
-    <script>
-      window.addEventListener("load", function () {
-        window.cookieconsent.initialise({
-          palette: {
-            popup: {
-              background: "#000"
-            },
-            button: {
-              background: "#ffa14d"
-            }
-          },
-          position: "bottom",
-          theme: "classic",
-          content: {
-            message: "This website uses cookies to ensure you get the best experience on our website.",
-            dismiss: "Accept",
-            link: "Learn more",
-            href: "/privacy-policy.html" 
-          }
-        });
-      });
-    </script>
+    <script src="js/cookie-consent.js" defer></script>
   </body>
 </html>

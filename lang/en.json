@@ -1,0 +1,130 @@
+{
+  "nav": {
+    "about": "About",
+    "product": "Product",
+    "pricing": "Pricing",
+    "demo": "Demo",
+    "login": "Login",
+    "googlePlayAlt": "Google Play",
+    "appStoreAlt": "App Store",
+    "languageEN": "EN",
+    "languageGR": "GR"
+  },
+
+  "heroSubtitle": "<span class='text-orange'>The Early Childhood App</span> for Kindergartens that put kids first",
+  "heroHeading": "Kindergarten,\nSimplified.",
+  "heroDescription": "Giving kindergartens and parents an active role in bettering the children's kindergarten experience.",
+  "heroButton": "Try Kido for Free",
+  
+  "aboutSectionTitle": "Why choose Kido cloud?",
+  "aboutSectionDescription": "Kido takes all of the essentials which schools and kindergartens need to keep things organized and to keep parents fully informed, and packs it into an affordable, simple and secure app. Nothing more, and nothing less.",
+
+  "reasons": {
+    "affordable": {
+      "title": "Affordable",
+      "description": "Kido's yearly subscription is comparable to a 2-month subscription of most other school management platforms, while boasting all the features your organization might need, made to be simple and user friendly."
+    },
+    "easy": {
+      "title": "Easy to use",
+      "description": "Whether you're tech-savvy or not, Kido is built using the latest User Interface practices to make onboarding and daily use easy-peasy. Try it for free and see for yourself!"
+    },
+    "simple": {
+      "title": "Simple yet effective",
+      "description": "We spoke to hundreds of parents, teachers and school employees to understand their needs perfectly, and they all boiled down to simplicity, safety and reliability. We passed their tests with flying colors before bringing Kido Cloud to life."
+    },
+    "adaptable": {
+      "title": "Adaptable and versatile",
+      "description": "Kido is created to meet the needs of every school or kindergarten. To achieve that, we've made your new favorite software to be both customizable AND easy to set up. Log in and give it a try!"
+    },
+    "safe": {
+      "title": "Safe and secure",
+      "description": "Safety is always first, for both kindergartens and for parents. That's why Kido uncompromisingly follows the highest digital security standards, ensuring all of your data is bulletproof, and stays untouchable."
+    }
+  },
+  
+  "midPageCtaTitle": "Join in on your child's <br class='mobile-hidden' /> academic journey",
+  "midPageCtaDescription": "A useful friendly platform that will bring parents\ncloser to the kindergarten.",
+  "midPageCtaButton": "Book A Demo",
+
+  "usersTitle": "Kido cloud users",
+  "userRoles": {
+    "teachers": {
+      "title": "Teachers",
+      "description": "Will have the ability to organize children into classes, share valuable info between themselves, the rest of the school's staff and the parents. They can easily send messages, share important class-wide announcements and more. In doing so, also help parents to have an active role in all of their children's victories."
+    },
+    "administrators": {
+      "title": "Administrators",
+      "description": "By creating a user friendly CRM, organize your system in a way that helps all the parties make an impact on the organization. Kido allows you to easily organize your classrooms, assign teachers, share messages, organize meals and to have an overview of the performance of the individual and the organization. Set your school apart with meticulously designed reports that will help your organization grow even further."
+    },
+    "staff": {
+      "title": "Staff",
+      "description": "The chef needs to know who's allergic to peanuts, or who doesn't eat fish? The school bus driver needs to see tomorrow's route? The administrators need to put a report together in a few clicks? We got you covered."
+    },
+    "parents": {
+      "title": "Parents",
+      "description": "Kido is built to keep parents fully informed about their children's progress and day-to-day activities; and to help them communicate with teachers and the staff by sharing information in real time."
+    },
+    "support": {
+      "title": "Support",
+      "description": "This is us! We have a team ready to assist with the set up and to provide answers to all of the questions you may have before and after your school has been enrolled. Just like parents, we're there 24/7!"
+    }
+  },
+
+  "pricing": {
+    "title": "Pricing",
+    "monthlyButton": "Monthly",
+    "yearlyButton": "Yearly",
+    "monthlyPrice": "£30 / month",
+    "yearlyEquivalent": "£360 / year",
+    "monthlyDescription": "Though we strive to make Kido impossibly affordable anyway, purchasing a yearly license entitles you to an ever better deal!",
+    "subscribeButton": "Subscribe",
+    "yearlyPrice": "£300 / year",
+    "monthlyEquivalent": "£25 / month",
+    "yearlyDescription": "Though we strive to make Kido impossibly affordable anyway, purchasing a yearly license entitles you to an ever better deal!",
+    "benefits": {
+      "collaborativeWorkspace": "Collaborative workspace",
+      "allInclusivePrice": "All-inclusive price per school",
+      "unlimitedUsers": "Unlimited users",
+      "photoLibrary": "Photo library",
+      "reportStats": "Report and stats system",
+      "supportSystem": "Support system"
+    }
+  },
+
+  "stepsCta": {
+    "title": "3 Easy Steps",
+    "text": "towards digital school"
+  },
+
+  "steps": {
+    "step1": {
+      "title": "1. Discover",
+      "description": "If you are a school owner/administrator, with a genuine desire to better your organization, we suggest you opt for a neatly designed, on-demand demo. We will show you how the app works and what this means for your school and everyone interacting with it."
+    },
+    "step2": {
+      "title": "2. Set up",
+      "description": "Our team here is prepared to assist you upon setting up, customizing the app and continuing to offer support throughout your journey with Kido! We are here on a long run, eager to grow as your school grows and improves. Access to reports and relevant statistics will provide a much needed insight on where your opportunity to grow lies."
+    },
+    "step3": {
+      "title": "3. You're live",
+      "description": "Once the set up has been completed your organization is prepared to grow and flourish with Kido cloud! You will have ongoing support and assistance needed throughout your journey. We will appreciate your feedback and guidance as a user to help us better the Kido cloud experience for all existing and new users."
+    }
+  },
+
+  "bottomPageCta": {
+    "title": "Would you like to see <br /> how it works?",
+    "description": "We are happy to show you around the app that we so carefully designed.<br />Schedule your demo, a personal tour through the app.",
+    "button": "Book A Demo"
+  },
+  
+  "footer": {
+    "exploreTitle": "Explore",
+    "about": "About",
+    "product": "Product",
+    "pricing": "Pricing",
+    "contactTitle": "Contact",
+    "privacy": "Privacy Policy",
+    "terms": "Terms & Conditions"
+  }
+  
+}
