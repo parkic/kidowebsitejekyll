@@ -1,4 +1,7 @@
 function setLanguage(lang) {
+  console.log("test", lang);
+  localStorage.setItem("lang", lang);
+
   fetch(`lang/${lang}.json`)
     .then((response) => response.json())
     .then((data) => {
@@ -19,4 +22,7 @@ function setLanguage(lang) {
     });
 }
 
-document.addEventListener("DOMContentLoaded", () => setLanguage("en"));
+document.addEventListener("DOMContentLoaded", () => {
+  const savedLang = localStorage.getItem("lang") || "en";
+  setLanguage(savedLang);
+});

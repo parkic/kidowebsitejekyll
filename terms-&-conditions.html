@@ -32,32 +32,32 @@
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <div class="desktop-nav-item scrollTo" data-scroll-to="about-section">
-                About
+                <span data-i18n="nav.about"></span>
                 <div class="underline-animation"></div>
               </div>
             </li>
             <li class="site-list__item site-list__item--active">
               <div class="desktop-nav-item scrollTo" data-scroll-to="product-section">
-                Product
+                <span data-i18n="nav.product"></span>
                 <div class="underline-animation"></div>
               </div>
             </li>
             <li class="site-list__item">
               <div class="desktop-nav-item scrollTo" data-scroll-to="pricing-section">
-                Pricing
+                <span data-i18n="nav.pricing"></span>
                 <div class="underline-animation"></div>
               </div>
             </li>
             <li class="site-list__item">
               <a href="contact.html" class="desktop-nav-item">
-                Demo
+                <span data-i18n="nav.demo"></span>
                 <div class="underline-animation"></div>
               </a>
             </li>
           </ul>
-          <a href="https://app.kido.cloud/" target="_blank" class="white-button">
-            Login
-          </a>
+
+          <a href="https://app.kido.cloud/" target="_blank" class="white-button" data-i18n="nav.login"></a>
+
           <ul class="flex gap-x-4">
             <li class="footer-link mt-1">
               <a href="https://play.google.com/store/apps/details?id=com.kido.cloud.app" target="_blank">
@@ -660,31 +660,28 @@
               </li>
             </ul>
           </div>
-          <div class="footer-explore-box w-full lg:w-1/4 lg:ml-12">
-            <h3 class="footer-title">Explore</h3>
+          <div class="footer-explore-box w-full lg:w-1/4 lg:ml-24">
+            <h3 class="footer-title" data-i18n="footer.exploreTitle"> </h3>
             <ul class="footer-nav">
               <li>
-                <span class="footer-nav-item scrollTo" data-scroll-to="about-section">
-                  About
+                <span class="footer-nav-item scrollTo" data-scroll-to="about-section" data-i18n="footer.about"> 
                   <div class="underline-animation"></div>
                 </span>
               </li>
               <li>
-                <span class="footer-nav-item scrollTo" data-scroll-to="product-section">
-                  Product
+                <span class="footer-nav-item scrollTo" data-scroll-to="product-section" data-i18n="footer.product">
                   <div class="underline-animation"></div>
                 </span>
               </li>
               <li>
-                <span class="footer-nav-item scrollTo" data-scroll-to="pricing-section">
-                  Pricing
+                <span class="footer-nav-item scrollTo" data-scroll-to="pricing-section" data-i18n="footer.pricing">
                   <div class="underline-animation"></div>
                 </span>
               </li>
             </ul>
           </div>
           <div class="footer-addresses-box w-full lg:w-1/2 lg:ml-24">
-            <h3 class="footer-title">Contact</h3>
+            <h3 class="footer-title" data-i18n="footer.contactTitle"></h3>
             <div class="mb-4">
               <a href="mailto:info@kido.cloud">info@kido.cloud</a>
             </div>
@@ -697,10 +694,11 @@
             </div>
           </div>
         </div>
+
         <div class="flex items-center justify-end gap-x-4 pt-8">
-            <a href="/privacy-policy.html" class="text-sm">Privacy Policy</a>
-            <a href="/terms-&-conditions.html" class="text-sm">Terms & Conditions</a>
-          </div>
+          <a href="/privacy-policy.html" class="text-sm" data-i18n="footer.privacy"> </a>
+          <a href="/terms-&-conditions.html" class="text-sm" data-i18n="footer.terms"> </a>
+        </div>
       </div>
     </footer>
 
@@ -709,6 +707,7 @@
     <script>
       AOS.init();
     </script>
+    <script src="js/lang.js"></script>
     <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
     <script src="js/cookie-consent.js" defer></script>
