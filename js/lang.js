@@ -1,5 +1,4 @@
 function setLanguage(lang) {
-  console.log("test", lang);
   localStorage.setItem("lang", lang);
 
   fetch(`lang/${lang}.json`)

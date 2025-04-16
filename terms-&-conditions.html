@@ -112,28 +112,30 @@
   
         <ul class="mobile-nav mt-20">
           <li>
-            <span class="mobile-nav-item scrollTo" data-scroll-to="about-section">
-              About
-            </span>
+            <span class="mobile-nav-item scrollTo" data-scroll-to="about-section" data-i18n="nav.about"></span>
           </li>
           <hr>
           <li>
-            <span class="mobile-nav-item scrollTo" data-scroll-to="product-section">
-              Product
-            </span>
+            <span class="mobile-nav-item scrollTo" data-scroll-to="product-section" data-i18n="nav.product"></span>
           </li>
           <hr>
           <li>
-            <span class="mobile-nav-item scrollTo" data-scroll-to="pricing-section">
-              Pricing
-            </span>
+            <span class="mobile-nav-item scrollTo" data-scroll-to="pricing-section" data-i18n="nav.pricing"></span>
           </li>
           <hr>
           <li class="mobile-nav-item">
-            <a href="contact.html" class="desktop-nav-item">
-              Demo
-              <div class="underline-animation"></div>
-            </a>
+            <a href="contact.html" class="desktop-nav-item" data-i18n="nav.demo"></a>
+          </li>
+          <hr>
+          <li class="mobile-nav-item mt-10">
+            <div class="flex items-center justify-center gap-x-2">
+              <div class="px-4 py-2" onclick="setLanguage('en')">
+                <span>EN</span>
+              </div>
+              <div class="px-4 py-2" onclick="setLanguage('gr')">
+                <span>GR</span>
+              </div>
+            </div>
           </li>
           <hr>
           <li>
