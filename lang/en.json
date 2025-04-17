@@ -125,6 +125,20 @@
     "contactTitle": "Contact",
     "privacy": "Privacy Policy",
     "terms": "Terms & Conditions"
-  }
+  },
   
+
+  "popup": {
+    "required": "Required",
+    "next": "Next",
+    "back": "Back",
+    "validEmail": "Please enter a valid email",
+    "firstStep": {
+      "title": "Create new school"
+    },
+    "secondStep": {
+      "title": "Create admin's profile",
+      "verificationText": "Verification link will be sent to the email associated with this profile for verification."
+    }
+  }
 }

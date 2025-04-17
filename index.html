@@ -460,33 +460,18 @@
                     <button id="monthly-button" class="pricing-button active" data-i18n="pricing.monthlyButton"> </button>
                     <button id="yearly-button" class="pricing-button" data-i18n="pricing.yearlyButton"> </button>
                   </div>
-                  <div
-                    id="monthly-card"
-                    class="price-card active"
-                    data-aos="fade-up"
-                  >
-                    <h2 class="big-price" data-i18n="pricing.monthlyPrice"> </h2>
-                    <h3 class="small-price" data-i18n="pricing.yearlyEquivalent"> </h3>
-                    
-                    <p class="price-text" data-i18n="pricing.monthlyDescription"> </p>
-
-                    <button 
-                      class="white-button" 
-                      onclick="openCheckout('monthly')"
-                      data-i18n="pricing.subscribeButton"
-                    > </button>
+                  <div id="monthly-card" class="price-card active" data-aos="fade-up">
+                    <h2 class="big-price" data-i18n="pricing.monthlyPrice"></h2>
+                    <h3 class="small-price" data-i18n="pricing.yearlyEquivalent"></h3>
+                    <p class="price-text" data-i18n="pricing.monthlyDescription"></p>
+                    <button class="white-button" data-i18n="pricing.subscribeButton" onclick="openCheckoutModal('monthly')"></button>
                   </div>
+                
                   <div id="yearly-card" class="price-card" data-aos="fade-up">
-                    <h2 class="big-price" data-i18n="pricing.yearlyPrice" ></h2>
+                    <h2 class="big-price" data-i18n="pricing.yearlyPrice"></h2>
                     <h3 class="small-price" data-i18n="pricing.monthlyEquivalent"></h3>
-
-                    <p class="price-text" data-i18n="pricing.yearlyDescription"> </p>
-
-                    <button 
-                      class="white-button"
-                      onclick="openCheckout('yearly')"
-                      data-i18n="pricing.subscribeButton"
-                    > </button>
+                    <p class="price-text" data-i18n="pricing.yearlyDescription"></p>
+                    <button class="white-button" data-i18n="pricing.subscribeButton" onclick="openCheckoutModal('yearly')"></button>
                   </div>
                 </div>
                 <div class="below-pricing-section flex flex-col w-full lg:w-auto">
@@ -638,6 +623,48 @@
         </div>
       </div>
     </footer>
+
+    <div id="popup-modal" class="popup-modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+    
+        <!-- Step 1 -->
+        <div id="modal-step-1">
+          <h2 data-i18n="popup.firstStep.title"></h2>
+          <input id="school-name" placeholder="Kindergarten’s name" />
+          <span id="school-name-error" class="error-message hidden" data-i18n="popup.required"></span>
+    
+          <input id="school-phone" placeholder="Phone Number" />
+    
+          <input id="school-email" placeholder="School Email" />
+          <span id="school-email-error" class="error-message hidden" data-i18n="popup.validEmail"></span>
+    
+          <input id="school-address" placeholder="School Address" />
+          <span id="school-address-error" class="error-message hidden" data-i18n="popup.required"></span>
+    
+          <button class="next-button mt-8" onclick="nextStep(2)" data-i18n="popup.next"></button>
+        </div>
+    
+        <!-- Step 2 -->
+        <div id="modal-step-2" style="display:none">
+          <h2 data-i18n="popup.secondStep.title"></h2>
+          <input id="admin-first-name" placeholder="First Name" />
+          <span id="admin-first-name-error" class="error-message hidden" data-i18n="popup.required"></span>
+    
+          <input id="admin-last-name" placeholder="Last Name" />
+          <span id="admin-last-name-error" class="error-message hidden" data-i18n="popup.required"></span>
+    
+          <input id="admin-email" placeholder="Email" />
+          <span id="admin-email-error" class="error-message hidden" data-i18n="popup.validEmail"></span>
+    
+          <p style="font-size: 14px; text-align: center; margin-bottom: 1rem"  data-i18n="popup.secondStep.verificationText"> </p>
+    
+          <button class="next-button" onclick="nextStep(3)" data-i18n="popup.next"></button>
+          <button class="back-button" onclick="goBackToStep(1)" data-i18n="popup.back"></button>
+        </div>
+      </div>
+    </div>
+    
 
     <script src="/js/scrollreveal.js"></script>
     <script src="/js/aos.js"></script>
