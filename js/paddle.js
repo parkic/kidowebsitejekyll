@@ -85,7 +85,7 @@ function nextStep(step) {
       }
     });
 
-    const email = formData.school.email;
+    const email = formData.school.email.trim();
     if (!validateEmail(email)) {
       document.getElementById("school-email-error").classList.remove("hidden");
       hasError = true;
@@ -141,7 +141,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (emailInput) {
     emailInput.addEventListener("input", (e) => {
-      const isValid = validateEmail(e.target.value);
+      const isValid = validateEmail(e.target.value.trim());
       document
         .getElementById("school-email-error")
         .classList.toggle("hidden", isValid);
